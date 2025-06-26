@@ -1,0 +1,160 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  background-color: #1e202b;
+}
+
+.site-title {
+  font-size: 20px;
+}
+.text {
+  font-size: 10px;
+  color: gray;
+}
+
+.nav {
+  background-color: #1e202b;
+  margin-bottom: 60px;
+}
+.left {
+  margin: 20px;
+}
+.left img {
+  width: 60%;
+  margin-left: 20px;
+}
+ 
+.right .nav-link {
+  color: white;
+  margin-left: 60px;
+}
+/* ========mainn======== */
+
+.mainn{
+    
+     background-color:#1e202b;
+      
+     
+}
+
+.imgg
+{
+    background-image: url("../img/banner.png");
+    background-size: cover;
+    padding: 80px 0px;
+}
+.content
+{
+    padding: 50px;
+    margin-top: -150px;
+    
+     
+      
+    
+}
+
+.content form
+{
+
+}
+
+
+.location {
+  position: relative;
+}
+.location .main_input {
+  background-color: #1e202b;
+  padding: 15px 40px;
+}
+
+.location .secound_input {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  background-color: #009ad8;
+  color: white;
+  text-align: center;
+}
+.card
+{
+   min-height: 560px;
+    
+}
+.card
+
+{
+    min-height: 380px;
+}
+.card-body h2 {
+  font-size: 100px;
+  color: white;
+}
+.card-body {
+  color: white;
+}
+.one {
+  background-color: #323544;
+}
+.one .card-header {
+  background-color: #2d303d;
+}
+.two {
+  background-color: #262936;
+}
+.two .card-header {
+  background-color: #222530;
+}
+
+/* ===== last ===== */
+
+.last {
+  background-color: #2d303d;
+}
+
+.last .sub {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.last .sub .submittt {
+  padding: 20px 60px 20px 20px;
+  background-color: #1e202b;
+  width: 100%;
+  color: white;
+}
+.last .sub .btn {
+  background-color: #009ad8;
+  color: white;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+}
+
+.last .icons a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #009ad8;
+  background-color: #1e202b;
+  text-align: center;
+  display: inline-block;
+  transition: 0.5s;
+}
+.last .icons .fa-brands {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.last .icons a:hover {
+  background-color: #009ad8;
+  color: white;
+}
+
+.last p {
+  color: white;
+  font-size: 15px;
+}

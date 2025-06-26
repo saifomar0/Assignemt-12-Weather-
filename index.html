@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>weather(saif omar)</title>
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  <link rel="stylesheet" href="./CSS/index.css" />
+</head>
+
+<body>
+  <!-- ========= Nav-bar ========= -->
+
+  <div class="nav my-4" id="Home">
+    <div class="container d-flex justify-content-between">
+      <a href="#Home" class="left d-flex">
+        <div class="left-img">
+          <img src="./img/logo@2x.png" alt="img" />
+        </div>
+
+        <div class="left-txt mt-2">
+          <div class="site-title">weather</div>
+          <div class="text">tagline goes here</div>
+        </div>
+      </a>
+
+      <div class="right navbar navbar-expand-lg">
+        <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">News</a>
+            <a class="nav-link" href="#">Live cameras</a>
+            <a class="nav-link" href="#">Photos</a>
+            <a class="nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================ main ================================ -->
+
+  <div class="mainn my-5">
+    <div class="imgg">
+      <div class="container">
+        <form action="#" class="location my-5">
+          <input type="text" class="w-100 rounded-5 border-0 main_input" placeholder="Find Location" />
+          <input type="text" value="Find" onclick=" getdata()" class="secound_input rounded-5 border-0" />
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content">
+        <div class="cards mt-4 border-0 rounded-3">
+
+          <div class="row">
+           
+            <div class="col col-md-12 col-lg-4 g-0 ">
+              <div class="card one">
+                <div class="card-header text-white d-flex justify-content-between  ">
+                  <div class="day">Wednesday</div>
+                  <div class="Date">25 june</div>
+                </div>
+                <div class="card-body">
+                  <div class="current_location">
+                    Cairo
+                  </div>
+                  <h2>24.2oC</h2>
+                  <p class="card-text">
+                    <img src="./img/113.png" class=" " alt="">
+                  <div class="weather">
+                    clear
+                    <div class="stautes ">
+                      <img src="./img/icon-umberella.png" alt=""> 20%
+                      <img src="./img/icon-wind.png" alt="">18km/h
+                      <img src="./img/icon-compass.png" alt="">East
+                    </div>
+                  </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-12 col-lg-4 g-0">
+              <div class="card two">
+                <div class="card-header text-center text-white">Header</div>
+                <div class="card-body text-center">
+                  <img src="./img/113 (1).png" class="my-5" alt="">
+                  <div class="card-text fs-4">
+                    <div class="sec-deg">37.2oC</div>
+                    <br>
+                    <span class="fs-6">22.9o</span>
+                    <div class="sec_statues fs-5">Sunny</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-md-12 col-lg-4 g-0">
+              <div class="card one three">
+                <div class="card-header text-center text-white">Header</div>
+                <div class="card-body text-center">
+                  <img src="./img/113 (1).png" class="my-5" alt="">
+                  <div class="card-text fs-4">
+                    <div class="sec-deg">37.2oC</div>
+                    <br>
+                    <span class="fs-6">22.9o</span>
+                    <div class="sec_statues fs-5">Sunny</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================ last ================================ -->
+  <div class="last">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-8">
+          <form action="#" class="sub">
+            <input type="email" placeholder="Enter you email" class="submittt rounded-5 border-0" />
+            <input type="submit" value="Subscribe" class="btn rounded-5" />
+          </form>
+        </div>
+        <div class="col-md-4">
+          <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+        <p>
+          Copyright 2014 Company name. Designed by Themezy. All rights
+          reserved
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/bootstrap.min.js"></script>
+  <script src="./JS/index.js"></script>
+</body>
+
+</html>
