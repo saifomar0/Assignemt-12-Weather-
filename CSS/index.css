@@ -49,17 +49,10 @@ body {
 {
     padding: 50px;
     margin-top: -150px;
-    
-     
-      
-    
+   
 }
 
-.content form
-{
-
-}
-
+ 
 
 .location {
   position: relative;
@@ -77,6 +70,8 @@ body {
   background-color: #009ad8;
   color: white;
   text-align: center;
+  padding: 20px;
+   
 }
 .card
 {

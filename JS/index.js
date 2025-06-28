@@ -17,10 +17,10 @@ async function getdata() {
     );
 
     let response = await data.json();
-    console.log(response);
-    console.log(response.forecast.forecastday[1]);
-    console.log(response.current.temp_c);
-     
+    // console.log(response);
+    // console.log(response.forecast.forecastday[1]);
+    // console.log(response.current.temp_c);
+
     const months = [
       "January",
       "February",
@@ -37,6 +37,7 @@ async function getdata() {
     ];
 
     const d = new Date(response.forecast.forecastday[0].date);
+
     const daysOfWeek = [
       "Sunday",
       "Monday",
@@ -60,7 +61,9 @@ async function getdata() {
                   </div>
                   <h2>${response.current.temp_c}<sup>o</sup>C</h2>
                   <p class="card-text">
-                    <img src="https:${response.forecast.forecastday[0].day.condition.icon}" alt="image">
+                    <img src="https:${
+                      response.forecast.forecastday[0].day.condition.icon
+                    }" alt="image">
                   <div class="weather">
                     ${response.forecast.forecastday[0].day.condition.text}
                     <div class="stautes ">
@@ -75,14 +78,24 @@ async function getdata() {
             </div>
             <div class="col col-md-12 col-sm-12 col-lg-4 g-0">
               <div class="card two">
-                <div class="card-header text-center text-white">${daysOfWeek[d.getDay()+1]}</div>
+                <div class="card-header text-center text-white">${
+                  daysOfWeek[(d.getDay() + 1) % 7]
+                }</div>
                 <div class="card-body text-center">
-                   <img src="https:${response.forecast.forecastday[1].day.condition.icon}" alt="image">
+                   <img src="https:${
+                     response.forecast.forecastday[1].day.condition.icon
+                   }" alt="image">
                   <div class="card-text fs-4">
-                    <div class="sec-deg">${response.forecast.forecastday[1].day.maxtemp_c}<sup>o</sup>C</div>
+                    <div class="sec-deg">${
+                      response.forecast.forecastday[1].day.maxtemp_c
+                    }<sup>o</sup>C</div>
                     <br>
-                    <span class="fs-6">${response.forecast.forecastday[1].day.mintemp_c}<sup>o</sup>C</span>
-                    <div class="sec_statues fs-5">${response.forecast.forecastday[1].day.condition.text}</div>
+                    <span class="fs-6">${
+                      response.forecast.forecastday[1].day.mintemp_c
+                    }<sup>o</sup>C</span>
+                    <div class="sec_statues fs-5">${
+                      response.forecast.forecastday[1].day.condition.text
+                    }</div>
                   </div>
                 </div>
               </div>
@@ -90,14 +103,24 @@ async function getdata() {
 
             <div class="col col-md-12 col-sm-12 col-lg-4 g-0">
               <div class="card one three">
-                <div class="card-header text-center text-white">${daysOfWeek[d.getDay()+2]}</div>
+                <div class="card-header text-center text-white">${
+                  daysOfWeek[(d.getDay() + 2) % 7]
+                }</div>
                 <div class="card-body text-center">
-                   <img src="https:${response.forecast.forecastday[2].day.condition.icon}" alt="image">
+                   <img src="https:${
+                     response.forecast.forecastday[2].day.condition.icon
+                   }" alt="image">
                   <div class="card-text fs-4">
-                    <div class="sec-deg">${response.forecast.forecastday[2].day.maxtemp_c}<sup>o</sup>C</div>
+                    <div class="sec-deg">${
+                      response.forecast.forecastday[2].day.maxtemp_c
+                    }<sup>o</sup>C</div>
                     <br>
-                    <span class="fs-6">${response.forecast.forecastday[2].day.mintemp_c}<sup>o</sup>C</span>
-                    <div class="sec_statues fs-5">${response.forecast.forecastday[2].day.condition.text}</div>
+                    <span class="fs-6">${
+                      response.forecast.forecastday[2].day.mintemp_c
+                    }<sup>o</sup>C</span>
+                    <div class="sec_statues fs-5">${
+                      response.forecast.forecastday[2].day.condition.text
+                    }</div>
                   </div>
                 </div>
               </div>
