@@ -1,9 +1,9 @@
 let apikey = "4391c7c947704eb68cf123733252506";
-let baseurl = " http://api.weatherapi.com/v1";
+let baseurl = " https://api.weatherapi.com/v1";
 let searchinput = document.querySelector(".main_input");
 
 let row = document.querySelector(".row");
-
+console.log("Asd");
 async function getdata() {
   try {
     let data = await fetch(
